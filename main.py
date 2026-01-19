@@ -1,6 +1,4 @@
-from src.models.baralho import Baralho
-from src.models.jogador import Jogador 
-from src.models.carta import Carta
+from src.models import Baralho, Jogador, Carta
 jogador = Jogador(input("Digite o nome do jogador: "))
 
 meu_baralho = Baralho()
