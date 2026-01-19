@@ -22,12 +22,3 @@ for _ in range(3):
 
 print(meu_baralho)
 print(f'Mão do {jogador} é: {jogador.mostrar_mao()}')
-print("--- TESTE DE MANILHA ---")
-vira_fake = Carta('3', 'Ouros') # O último da lista
-minha_carta = Carta('4', 'Paus') # O primeiro da lista (deve ser manilha)
-
-if minha_carta.ismanilha(vira_fake):
-    print(f"Sucesso! Com vira {vira_fake.face}, a manilha é {minha_carta.face}")
-else:
-    print("Erro na matemática circular!")
-print("------------------------")
