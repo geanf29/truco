@@ -13,6 +13,7 @@ class Carta:
     def ismanilha(self, carta_vira):
         indice_face_vira = Carta.FACES.index(carta_vira.face) 
         indice_manilha = (indice_face_vira + 1) % len(Carta.FACES) 
+        return self.face == Carta.FACES[indice_manilha]
     def valor(self, carta_vira):
         if self.virada:
             return -1 
