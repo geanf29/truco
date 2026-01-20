@@ -10,3 +10,6 @@ class Jogador:
         return ', '.join(str(carta) for carta in self.mao)
     def receber_carta(self, carta):
         self.mao.append(carta)
+    def jogar_carta(self, indice):
+        return self.mao.pop(indice)
+    
